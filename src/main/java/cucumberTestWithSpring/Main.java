@@ -13,7 +13,6 @@ private static ApplicationContext applicationContext;
 public static void main(String[] args) {
     applicationContext = new AnnotationConfigApplicationContext(SpringConfiguration.class);
     CucumberPropsConfig CPC = applicationContext.getBean(CucumberPropsConfig.class);
-    System.out.println("StatusCode to check= "+CPC.getStatusCode());
-    System.out.println("URL to test= "+CPC.getUrl());
+    System.out.println("Starting Cucumber Tests with Spring, Looking for feature files...");
   }
 }
