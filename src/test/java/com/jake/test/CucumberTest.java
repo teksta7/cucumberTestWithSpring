@@ -7,8 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"src/test/"},
-		plugin = {"pretty", "json:target/Mock-Service.json"},
-		tags = {"@MockTest"})
+		plugin = {"pretty", "json:target/Mock-Service.json"})
 public class CucumberTest {
 
 }
